@@ -11,14 +11,14 @@ import net.msembodo.pwdvault.api.model.VaultUser;
 
 public class LoginResponse {
 	
-	private boolean isLoginSuccess;
+	private boolean loginSuccess;
 	private String message;
 	private String sessionId;
 	private VaultUser vaultUser;
 	
-	public LoginResponse(boolean isLoginSuccess, String message, String sessionId, VaultUser vaultUser) {
+	public LoginResponse(boolean loginSuccess, String message, String sessionId, VaultUser vaultUser) {
 		super();
-		this.isLoginSuccess = isLoginSuccess;
+		this.loginSuccess = loginSuccess;
 		this.message = message;
 		this.sessionId = sessionId;
 		this.vaultUser = vaultUser;
@@ -29,11 +29,11 @@ public class LoginResponse {
 	}
 
 	public boolean isLoginSuccess() {
-		return isLoginSuccess;
+		return loginSuccess;
 	}
 
-	public void setLoginSuccess(boolean isLoginSuccess) {
-		this.isLoginSuccess = isLoginSuccess;
+	public void setLoginSuccess(boolean loginSuccess) {
+		this.loginSuccess = loginSuccess;
 	}
 
 	public String getSessionId() {

@@ -9,12 +9,12 @@ import com.google.gson.Gson;
 
 public class DeleteTokenResponse {
 	
-	private boolean isDeleteTokenSuccess;
+	private boolean deleteTokenSuccess;
 	private String message;
 
-	public DeleteTokenResponse(boolean isDeleteTokenSuccess, String message) {
+	public DeleteTokenResponse(boolean deleteTokenSuccess, String message) {
 		super();
-		this.isDeleteTokenSuccess = isDeleteTokenSuccess;
+		this.deleteTokenSuccess = deleteTokenSuccess;
 		this.message = message;
 	}
 
@@ -23,11 +23,11 @@ public class DeleteTokenResponse {
 	}
 
 	public boolean isDeleteTokenSuccess() {
-		return isDeleteTokenSuccess;
+		return deleteTokenSuccess;
 	}
 
 	public void setDeleteTokenSuccess(boolean isDeleteTokenSuccess) {
-		this.isDeleteTokenSuccess = isDeleteTokenSuccess;
+		this.deleteTokenSuccess = isDeleteTokenSuccess;
 	}
 	
 	public String getMessage() {

@@ -9,13 +9,13 @@ import com.google.gson.Gson;
 
 public class TokenizeResponse {
 	
-	private boolean isTokenizeSuccess;
+	private boolean tokenizeSuccess;
 	private Long tokenId;
 	private String message;
 	
-	public TokenizeResponse(boolean isTokenizeSuccess, Long tokenId, String message) {
+	public TokenizeResponse(boolean tokenizeSuccess, Long tokenId, String message) {
 		super();
-		this.isTokenizeSuccess = isTokenizeSuccess;
+		this.tokenizeSuccess = tokenizeSuccess;
 		this.tokenId = tokenId;
 		this.message = message;
 	}
@@ -25,11 +25,11 @@ public class TokenizeResponse {
 	}
 
 	public boolean isTokenizeSuccess() {
-		return isTokenizeSuccess;
+		return tokenizeSuccess;
 	}
 
-	public void setTokenizeSuccess(boolean isTokenizeSuccess) {
-		this.isTokenizeSuccess = isTokenizeSuccess;
+	public void setTokenizeSuccess(boolean tokenizeSuccess) {
+		this.tokenizeSuccess = tokenizeSuccess;
 	}
 
 	public Long getTokenId() {

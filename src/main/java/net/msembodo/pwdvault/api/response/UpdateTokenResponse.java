@@ -9,12 +9,12 @@ import com.google.gson.Gson;
 
 public class UpdateTokenResponse {
 	
-	private boolean isUpdateTokenSuccess;
+	private boolean updateTokenSuccess;
 	private String message;
 
-	public UpdateTokenResponse(boolean isUpdateTokenSuccess, String message) {
+	public UpdateTokenResponse(boolean updateTokenSuccess, String message) {
 		super();
-		this.isUpdateTokenSuccess = isUpdateTokenSuccess;
+		this.updateTokenSuccess = updateTokenSuccess;
 		this.message = message;
 	}
 
@@ -23,11 +23,11 @@ public class UpdateTokenResponse {
 	}
 
 	public boolean isUpdateTokenSuccess() {
-		return isUpdateTokenSuccess;
+		return updateTokenSuccess;
 	}
 
-	public void setUpdateTokenSuccess(boolean isUpdateTokenSuccess) {
-		this.isUpdateTokenSuccess = isUpdateTokenSuccess;
+	public void setUpdateTokenSuccess(boolean updateTokenSuccess) {
+		this.updateTokenSuccess = updateTokenSuccess;
 	}
 	
 	public String getMessage() {

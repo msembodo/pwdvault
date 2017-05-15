@@ -11,13 +11,13 @@ import net.msembodo.pwdvault.api.model.VaultData;
 
 public class RetrieveTokenResponse {
 	
-	private boolean isRetrieveTokenSuccess;
+	private boolean retrieveTokenSuccess;
 	private String message;
 	private VaultData vaultData;
 	
-	public RetrieveTokenResponse(boolean isRetrieveTokenSuccess, String message, VaultData vaultData) {
+	public RetrieveTokenResponse(boolean retrieveTokenSuccess, String message, VaultData vaultData) {
 		super();
-		this.isRetrieveTokenSuccess = isRetrieveTokenSuccess;
+		this.retrieveTokenSuccess = retrieveTokenSuccess;
 		this.message = message;
 		this.vaultData = vaultData;
 	}
@@ -27,11 +27,11 @@ public class RetrieveTokenResponse {
 	}
 
 	public boolean isRetrieveTokenSuccess() {
-		return isRetrieveTokenSuccess;
+		return retrieveTokenSuccess;
 	}
 
-	public void setRetrieveTokenSuccess(boolean isRetrieveTokenSuccess) {
-		this.isRetrieveTokenSuccess = isRetrieveTokenSuccess;
+	public void setRetrieveTokenSuccess(boolean retrieveTokenSuccess) {
+		this.retrieveTokenSuccess = retrieveTokenSuccess;
 	}
 
 	public String getMessage() {

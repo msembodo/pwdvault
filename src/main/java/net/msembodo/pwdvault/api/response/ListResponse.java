@@ -13,13 +13,13 @@ import net.msembodo.pwdvault.api.model.VaultAccountType;
 
 public class ListResponse {
 	
-	private boolean isListSuccess;
+	private boolean listSuccess;
 	private String message;
 	private List<VaultAccountType> accountTypes;
 	
-	public ListResponse(boolean isListSuccess, String message, List<VaultAccountType> accountTypes) {
+	public ListResponse(boolean listSuccess, String message, List<VaultAccountType> accountTypes) {
 		super();
-		this.isListSuccess = isListSuccess;
+		this.listSuccess = listSuccess;
 		this.message = message;
 		this.accountTypes = accountTypes;
 	}
@@ -27,11 +27,11 @@ public class ListResponse {
 	public ListResponse() {}
 
 	public boolean isListSuccess() {
-		return isListSuccess;
+		return listSuccess;
 	}
 
-	public void setListSuccess(boolean isListSuccess) {
-		this.isListSuccess = isListSuccess;
+	public void setListSuccess(boolean listSuccess) {
+		this.listSuccess = listSuccess;
 	}
 
 	public String getMessage() {

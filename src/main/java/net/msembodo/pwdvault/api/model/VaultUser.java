@@ -3,12 +3,12 @@ package net.msembodo.pwdvault.api.model;
 public class VaultUser {
 	
 	private String email;
-	private String Name;
+	private String name;
 	
 	public VaultUser(String email, String name) {
 		super();
 		this.email = email;
-		Name = name;
+		this.name = name;
 	}
 
 	public VaultUser() {
@@ -24,11 +24,11 @@ public class VaultUser {
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 }

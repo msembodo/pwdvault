@@ -9,22 +9,22 @@ import com.google.gson.Gson;
 
 public class LogoutResponse {
 	
-	private boolean isLogoutSuccess;
+	private boolean logoutSuccess;
 	private String message;
 	
 	public LogoutResponse() {}
 
-	public LogoutResponse(boolean isLogoutSuccess) {
+	public LogoutResponse(boolean logoutSuccess) {
 		super();
-		this.isLogoutSuccess = isLogoutSuccess;
+		this.logoutSuccess = logoutSuccess;
 	}
 
 	public boolean isLogoutSuccess() {
-		return isLogoutSuccess;
+		return logoutSuccess;
 	}
 
-	public void setLogoutSuccess(boolean isLogoutSuccess) {
-		this.isLogoutSuccess = isLogoutSuccess;
+	public void setLogoutSuccess(boolean logoutSuccess) {
+		this.logoutSuccess = logoutSuccess;
 	}
 	
 	public String getMessage() {
